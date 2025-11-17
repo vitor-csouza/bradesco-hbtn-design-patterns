@@ -1,11 +1,11 @@
-1. O que é Arquitetura Hexagonal e por quem ela foi criada?
-A Arquitetura Hexagonal foi proposta por Alistair Cockburn e tem como objetivo isolar o núcleo da aplicação, onde estão as regras de negócio, das partes externas como banco de dados, interface do usuário, APIs e frameworks. Ela recebe esse nome porque sua representação visual lembra um hexágono. No centro ficam as regras de negócio e ao redor estão as portas e adaptadores que conectam o sistema ao mundo externo.
+1. O que e Arquitetura Hexagonal e por quem ela foi criada?
+A Arquitetura Hexagonal foi proposta por Alistair Cockburn e tem como objetivo isolar o nucleo da aplicacao, separando as regras de negocio das partes externas como banco de dados, interfaces, APIs e frameworks. Ela enfatiza o uso de portas e adaptadores para organizar a comunicacao entre o dominio e o mundo externo.
 
-2. Quais são os benefícios e recursos que a Arquitetura Hexagonal fornece?
-Entre seus principais benefícios estão: independência de tecnologia, permitindo trocar banco de dados e frameworks sem alterar o domínio; alta testabilidade, graças ao núcleo isolado; baixo acoplamento e alta coesão das responsabilidades; facilidade de evolução, pois novos adaptadores podem ser adicionados sem alterar o centro da aplicação; melhora na manutenção, escalabilidade e reutilização do domínio em diferentes contextos.
+2. Quais sao os beneficios e recursos que a Arquitetura Hexagonal fornece?
+Entre seus principais beneficios estao a independencia de tecnologia, permitindo trocar banco de dados e frameworks sem alterar o dominio; a alta testabilidade, pois o nucleo fica isolado; o baixo acoplamento e a alta coesao; e a facilidade de evolucao, ja que adaptadores podem ser adicionados sem modificar o centro da aplicacao.
 
-3. Quais as diferenças entre Arquitetura Hexagonal e Clean Architecture?
-A Arquitetura Hexagonal foca na separação entre domínio e infraestrutura por meio de portas e adaptadores, enfatizando como o sistema se comunica com o exterior. Já a Clean Architecture foca nas regras de dependência entre camadas, garantindo que as camadas internas nunca dependam das externas. Na prática, a Hexagonal é utilizada para isolar o domínio e facilitar várias formas de entrada e saída, enquanto a Clean pode ser vista como uma generalização desses princípios.
+3. Quais as diferencas entre Arquitetura Hexagonal e Clean Architecture?
+A Arquitetura Hexagonal foca na separacao entre dominio e infraestrutura utilizando portas e adaptadores. A Clean Architecture, por sua vez, organiza o sistema em camadas com regras de dependencia mais rigidas. Ambas buscam isolar o dominio, mas a Hexagonal e mais direta na forma como trata a comunicacao com o exterior.
 
-4. A Arquitetura Hexagonal pode ser utilizada em qualquer tipo de projeto? O que deve ser considerado antes de adotá-la?
-Embora traga muitos benefícios, a Arquitetura Hexagonal nem sempre é a melhor escolha. Em sistemas pequenos ou com regras simples, o esforço extra para criar portas, adaptadores e camadas pode não compensar. Antes de adotá-la, é importante avaliar a complexidade do domínio, a necessidade de escalabilidade, a possibilidade de mudança de tecnologias no futuro e o nível de maturidade da equipe.
+4. A Arquitetura Hexagonal pode ser utilizada em qualquer tipo de projeto? O que deve ser considerado antes de adota-la?
+A Arquitetura Hexagonal pode ser aplicada em diferentes projetos, mas nem sempre e a opcao mais adequada. Em sistemas pequenos, o custo adicional pode nao compensar. Antes de adota-la, e importante avaliar a complexidade do dominio, a necessidade de escalabilidade, a possibilidade de mudanca de tecnologias e a maturidade da equipe.
